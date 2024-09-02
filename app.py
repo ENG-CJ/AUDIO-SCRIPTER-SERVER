@@ -67,6 +67,6 @@ def start_live_transcription():
     
     return jsonify({"transcription": transcribed_text})
 
-# if __name__ == '__main__':
-#     os.makedirs("temp", exist_ok=True)
-#     app.run(debug=True, port=5000, host='localhost')
+if __name__ == '__main__':
+    os.makedirs("temp", exist_ok=True)
+    app.run(debug=True, port=5000, host='localhost')
